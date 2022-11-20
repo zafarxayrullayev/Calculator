@@ -1,0 +1,8 @@
+D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\MyC#\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\MyC#\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\MyC#\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.pdb
