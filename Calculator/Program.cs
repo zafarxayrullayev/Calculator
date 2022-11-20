@@ -16,6 +16,13 @@ namespace Calculator
             Console.Write("2-sonni kiriting : ");
             secondNum= Convert.ToInt32(Console.ReadLine());
 
+            string message =
+                firstNum >= 0
+                ? "1st number is positive"
+                : "1st number is negative";
+
+            Console.WriteLine(message);
+
             if (secondNum > firstNum)
             {
                 Console.WriteLine("Second number is older");
@@ -28,7 +35,31 @@ namespace Calculator
             {
                 Console.WriteLine("First number is older");
             }
-            
+
+            Console.WriteLine("2 ta son ustida amallar, '+, -, /, *, %'");
+            string amal = Console.ReadLine();   
+            switch (amal)
+            {
+                case "+":
+                    Console.WriteLine($"{firstNum} + {secondNum} = {firstNum + secondNum}");
+                    break;
+                case "-":
+                    Console.WriteLine($"{firstNum} - {secondNum} = {firstNum - secondNum}");
+                    break;
+                case "*":
+                    Console.WriteLine($"{firstNum} * {secondNum} = {firstNum * secondNum}");
+                    break;
+                case "/":
+                    Console.WriteLine($"{firstNum} / {secondNum} = {firstNum / secondNum}");
+                    break;
+                case "%":
+                    Console.WriteLine($"{firstNum} % {secondNum} = {firstNum % secondNum}");
+                    break;
+                default:
+                    break;
+            }
+
+
         }
     }
 }
