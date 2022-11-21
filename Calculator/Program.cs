@@ -37,7 +37,7 @@ namespace Calculator
             }
 
             Console.WriteLine("2 ta son ustida amallar, '+, -, /, *, %'");
-            string amal = Console.ReadLine();   
+            string amal = Console.ReadLine();
             switch (amal)
             {
                 case "+":
@@ -59,6 +59,20 @@ namespace Calculator
                     break;
             }
 
+            //Console.WriteLine("2 ta son ustida amallar, '+, -, /, *, %'");
+            //string amal = Console.ReadLine();
+            //string result = amal switch
+            //{
+            //    "+" => $"{firstNum} + {secondNum} = {firstNum + secondNum}",
+            //    _ => "bundayi yo'q"
+            //} ;
+
+            int counter = 0;
+            while (counter < firstNum)
+            {
+                Console.WriteLine(counter);
+                counter += 2;
+            }
 
         }
     }
