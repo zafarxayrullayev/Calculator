@@ -65,13 +65,17 @@ namespace Calculator
             //{
             //    "+" => $"{firstNum} + {secondNum} = {firstNum + secondNum}",
             //    _ => "bundayi yo'q"
-            //} ;
+            //};
 
-            int counter = 0;
-            while (counter < firstNum)
+
+            // karra jadval
+
+            for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine(counter);
-                counter += 2;
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.WriteLine($"{i} * {j} = {i * j}");
+                }
             }
 
         }
