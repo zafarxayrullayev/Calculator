@@ -22,7 +22,6 @@ namespace Calculator
             actions.PositiveOrNegative(firstNum); // method
             actions.WhichOnIsBigger(firstNum, secondNum);// method
 
-            
 
             Console.WriteLine("2 ta son ustida amallar, '+, -, /, *, %'");
             string amal = Console.ReadLine();
