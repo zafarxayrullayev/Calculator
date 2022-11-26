@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Classes_k;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,31 +12,17 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            int firstNum, secondNum;
+            decimal firstNum, secondNum;
             Console.Write("1-sonni kiriting : ");
-            firstNum = Convert.ToInt32(Console.ReadLine());
+            firstNum = Convert.ToDecimal(Console.ReadLine());
             Console.Write("2-sonni kiriting : ");
-            secondNum= Convert.ToInt32(Console.ReadLine());
+            secondNum= Convert.ToDecimal(Console.ReadLine());
 
-            string message =
-                firstNum >= 0
-                ? "1st number is positive"
-                : "1st number is negative";
+            InitialActions actions = new InitialActions(); // create object
+            actions.PositiveOrNegative(firstNum); // method
+            actions.WhichOnIsBigger(firstNum, secondNum);// method
 
-            Console.WriteLine(message);
-
-            if (secondNum > firstNum)
-            {
-                Console.WriteLine("Second number is older");
-            }
-            else if (secondNum == firstNum)
-            {
-                Console.WriteLine("Equal");
-            }
-            else
-            {
-                Console.WriteLine("First number is older");
-            }
+            
 
             Console.WriteLine("2 ta son ustida amallar, '+, -, /, *, %'");
             string amal = Console.ReadLine();

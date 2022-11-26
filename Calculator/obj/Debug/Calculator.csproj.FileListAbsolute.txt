@@ -6,3 +6,6 @@ D:\MyC#\Calculator\Calculator\bin\Debug\Calculator.exe
 D:\MyC#\Calculator\Calculator\bin\Debug\Calculator.pdb
 D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.exe
 D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.pdb
+D:\MyC#\Calculator\Calculator\bin\Debug\Classes_k.dll
+D:\MyC#\Calculator\Calculator\bin\Debug\Classes_k.pdb
+D:\MyC#\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete
