@@ -21,49 +21,14 @@ namespace Calculator
             InitialActions actions = new InitialActions(); // create object
             actions.PositiveOrNegative(firstNum); // method
             actions.WhichOnIsBigger(firstNum, secondNum);// method
-
-
-            Console.WriteLine("2 ta son ustida amallar, '+, -, /, *, %'");
-            string amal = Console.ReadLine();
-            switch (amal)
-            {
-                case "+":
-                    Console.WriteLine($"{firstNum} + {secondNum} = {firstNum + secondNum}");
-                    break;
-                case "-":
-                    Console.WriteLine($"{firstNum} - {secondNum} = {firstNum - secondNum}");
-                    break;
-                case "*":
-                    Console.WriteLine($"{firstNum} * {secondNum} = {firstNum * secondNum}");
-                    break;
-                case "/":
-                    Console.WriteLine($"{firstNum} / {secondNum} = {firstNum / secondNum}");
-                    break;
-                case "%":
-                    Console.WriteLine($"{firstNum} % {secondNum} = {firstNum % secondNum}");
-                    break;
-                default:
-                    break;
-            }
-
-            //Console.WriteLine("2 ta son ustida amallar, '+, -, /, *, %'");
-            //string amal = Console.ReadLine();
-            //string result = amal switch
-            //{
-            //    "+" => $"{firstNum} + {secondNum} = {firstNum + secondNum}",
-            //    _ => "bundayi yo'q"
-            //};
-
-
+            Console.Write("2 ta son ustida amallar, '+, -, /, *, %' : " );
+            string action = Console.ReadLine(); // enter action;
+            actions.SelectAction(action, firstNum, secondNum);  // method
             // karra jadval
+            actions.ShowTable();
 
-            for (int i = 1; i <= 10; i++)
-            {
-                for (int j = 1; j <= 10; j++)
-                {
-                    Console.WriteLine($"{i} * {j} = {i * j}");
-                }
-            }
+
+
 
         }
     }
