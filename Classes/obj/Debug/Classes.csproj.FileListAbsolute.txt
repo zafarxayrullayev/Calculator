@@ -1,0 +1,6 @@
+D:\MyC#\Calculator\Classes\bin\Debug\Classes.dll
+D:\MyC#\Calculator\Classes\bin\Debug\Classes.pdb
+D:\MyC#\Calculator\Classes\obj\Debug\Classes.csproj.AssemblyReference.cache
+D:\MyC#\Calculator\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+D:\MyC#\Calculator\Classes\obj\Debug\Classes.dll
+D:\MyC#\Calculator\Classes\obj\Debug\Classes.pdb

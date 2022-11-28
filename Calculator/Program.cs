@@ -1,4 +1,4 @@
-﻿using Classes_k;
+﻿using Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,20 +12,18 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            decimal firstNum, secondNum;
-            Console.Write("1-sonni kiriting : ");
-            firstNum = Convert.ToDecimal(Console.ReadLine());
-            Console.Write("2-sonni kiriting : ");
-            secondNum= Convert.ToDecimal(Console.ReadLine());
 
-            InitialActions actions = new InitialActions(); // create object
-            actions.PositiveOrNegative(firstNum); // method
-            actions.WhichOnIsBigger(firstNum, secondNum);// method
-            Console.Write("2 ta son ustida amallar, '+, -, /, *, %' : " );
-            string action = Console.ReadLine(); // enter action;
-            actions.SelectAction(action, firstNum, secondNum);  // method
-            // karra jadval
-            actions.ShowTable();
+
+            Calculatorr calculate = new Calculatorr(); // create object
+            calculate.EnterTwoNumbers(); // method
+            calculate.WhichOnIsBigger(); // method
+            Console.Write("2 ta son ustida amallar, '+, -, /, *, %' : ");
+            string operation = Console.ReadLine(); // enter operation;
+            calculate.SelectOperation(operation);
+            calculate.ShowMultiplicationTable();
+
+            //// karra jadval
+            //actions.ShowTable();
 
 
 
